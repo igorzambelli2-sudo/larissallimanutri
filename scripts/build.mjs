@@ -1,0 +1,11 @@
+import { cpSync, copyFileSync, existsSync, mkdirSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+const root = process.cwd();
+execFileSync(process.execPath, ['scripts/check.mjs'], { cwd: root, stdio: 'inherit' });
+const out = join(root, 'dist');
+if (existsSync(out)) rmSync(out, { recursive: true, force: true });
+mkdirSync(out);
+for (const filename of ['index.html','styles.css','favicon.svg','robots.txt']) copyFileSync(join(root, filename), join(out, filename));
+for (const dirname of ['js','images']) cpSync(join(root, dirname), join(out, dirname), { recursive: true });
+console.log('Build concluído: dist/');
