@@ -38,7 +38,7 @@ Edite `js/config.js`:
 - `whatsappNumber`: dígitos com DDI+DDD, sem símbolos. Enquanto vazio, os botões de contato levam ao Instagram confirmado no briefing; o texto do botão final muda automaticamente para "Conversar no Instagram".
 - `whatsappMessage`: mensagem pré-preenchida.
 - `crn`: registro confirmado da Larissa; se vazio, não é exibido.
-- `profilePhoto`: caminho para a fotografia real autorizada, por exemplo `images/larissa.webp`. O site insere a foto automaticamente apenas na seção Sobre Larissa.
+- `profilePhoto`: caminho para a fotografia real autorizada, atualmente `images/larissa-lima.webp`. O site insere a foto automaticamente apenas na seção Sobre Larissa.
 - `instagramUrl`: contato oficial.
 - `siteUrl`: URL definitiva, para tag canonical e imagem Open Graph; o ideal é escrever essas URLs diretamente no HTML antes de lançar, pois alguns robôs sociais não executam JavaScript.
 
@@ -51,7 +51,7 @@ As quatro imagens de alimentos, em `images/`, foram **geradas por IA para este p
 - Aprovar os textos da biografia e a caracterização dos pilares do Método Agapi.
 - Aprovar as etapas reais de atendimento (duração e frequência não foram inventadas).
 - Informar WhatsApp oficial e CRN.
-- Adicionar fotografias reais e autorizadas da Larissa.
+- A foto enviada já foi adicionada à seção Sobre; confirmar com a profissional se deseja usá-la também em outras áreas.
 - Confirmar domínio e meta tags de compartilhamento.
 - Somente adicionar depoimentos reais quando houver autorização expressa e conformidade com as regras aplicáveis. Atualmente há mensagem institucional, **sem avaliações fictícias**.
 - Confirmar que o registro profissional e a publicidade estão adequados às normas do CFN/CRN.
@@ -70,4 +70,4 @@ O site usa fontes Google Fonts em tempo de execução, com fallback serif/sans; 
 
 ### Estado dos testes nesta entrega
 
-As verificações de código, nove testes automatizados, build e respostas HTTP dos recursos locais passaram. **Não foi possível concluir uma inspeção visual com capturas de tela do Chromium neste ambiente**; revise os enquadramentos e a ausência de rolagem horizontal no navegador antes do lançamento.
+As verificações de código, dez testes automatizados, build e respostas HTTP dos recursos locais passaram. **Não foi possível concluir uma inspeção visual com capturas de tela do Chromium neste ambiente**; revise os enquadramentos e a ausência de rolagem horizontal no navegador antes do lançamento.
